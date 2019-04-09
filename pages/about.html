@@ -1,0 +1,47 @@
+<section class="about-main-container" ng-controller="aboutCtrl" ng-cloak>
+	<nav class="nav-about">
+		<ul ng-hide="showAboutNav">
+			<li><button ng-click="goTo(content.about.section1.id)">{{content.about.section1.header}}</button></li>
+			<li><button ng-click="goTo(content.about.section2.id)">{{content.about.section2.header}}</button></li>
+			<li><button ng-click="goTo(content.about.section3.id)">{{content.about.section3.header}}</button></li>
+		</ul>
+	</nav>
+	<div class="about-section-content" id="{{content.about.section1.id}}">
+		<h2>{{content.about.section1.header}}</h2>
+		<div class="about-info-content">
+			<p>{{content.about.section1.text}}</p>
+			<img ng-src="{{content.about.section1.photo}}" alt="moje zdjecie">
+			<ul>
+				<li ng-repeat="li in content.about.section1.list">
+					<h3>{{li.item}}</h3>
+					<p>{{li.content}}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="about-section-content about-abilities-container" id="{{content.about.section2.id}}"">
+		<h2>{{content.about.section2.header}}</h2>
+		<ul class="about-abilities-content" ng-repeat="group in content.about.section2.groups">
+			<li ng-repeat="icon in group">
+				<figure>
+					<img class="about-icon" ng-src="{{icon.pic}}" alt="{{'logo ' + icon.name}}">
+					<figcaption class="about-icon-name">{{icon.name}}</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</div>
+	<div class="timeline-section" id="{{content.about.section3.id}}">
+		<h2 >{{content.about.section3.header}}</h2>
+		<div class="about-timeline">
+			<ul>
+				<li ng-repeat="time in content.about.section3.timeline" pseudo-content="{{time.time}}">
+					<div class="timeline-element">
+						<h3>{{time.title}}</h3>
+						<h5>{{time.tech}}</h5>
+						<p>{{time.content}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,19 @@
+<section class="contact-container" ng-cloak ng-controller="contactCtrl">
+	<h2>{{content.contact.header}}</h2>
+	<div class="contact-content">
+		<ul class="contact-links">
+			<li ng-repeat="option in content.contact.options">
+				<h3>{{option.header}}</h3>
+				<a href="{{option.type}}{{option.value}}" class="contact-option">{{option.value}}</a>
+			</li>
+		</ul>
+		<form class="contact-form" method="post" ng-submit="sendMail()">
+			<input type="text" placeholder="Nazwa/Imię/Cokolwiek" ng-model="contactForm.name">
+			<input type="email" placeholder="Twój e-mail" ng-model="contactForm.mail">
+			<textarea placeholder="Wiadomość" ng-model="contactForm.text"></textarea>
+			<div vc-recaptcha class="captcha" theme="dark" size="normal" key="publicKey" lang="pl"></div>
+			<input type="submit" name="submit" value="WYŚLIJ">
+			
+		</form>
+	</div>
+</section>

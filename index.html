@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="site" ng-controller="siteCtrl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="robots" content="all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Piotr Janusz">
+	<link rel="icon" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/style-xs.css">
+	<link rel="stylesheet" href="css/style-s.css">
+	<link rel="stylesheet" href="css/style-m.css">
+	<link rel="stylesheet" href="css/style-b.css">
+	<title>Piotr Janusz</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+	<script type="text/javascript" src="js/angular-recaptcha.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<nav ng-controller="navCtrl" ng-cloak>
+		<ul id="main-nav" class="nav-mobile nav-mobile-animate" ng-hide="hideNavToggle" ng-class="{'nav-main': isActive('/start') || isActive('/'), 'nav-main-small': isActive('/about') || isActive('/portfolio') || isActive('/contact')}" ng-cloak>
+			<li><button ng-click="navToggle()">✘</button></li>
+			<li><a href="#start">{{content.nav.mainNav.home}}</a></li>
+			<li><a href="#about">{{content.nav.mainNav.option1}}</a></li>
+			<li><a href="#portfolio">{{content.nav.mainNav.option2}}</a></li>
+			<li><a href="#contact">{{content.nav.mainNav.option3}}</a></li>
+			<div ng-class="{'border':isActive('/start') || isActive('/'), 'border-off': isActive('/about') || isActive('/portfolio') || isActive('/contact')}"></div>
+		</ul>
+		<button class="nav-mobile-open" ng-hide="!hideNavToggle" ng-click="navToggle()">☰</button>
+	</nav>
+	
+	<div id="main" ng-view class="view-container"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<section class="portfolio-container" ng-controller="portfolioCtrl" ng-cloak>
+    <h2>{{content.portfolio.header}}</h2>
+    <ul class="portfolio-content">
+        <li ng-repeat="item in content.portfolio.items" class="portfolio-item portfolio-item-animate" ng-show="selected === $index">
+
+            <img class="portfolio-item-image"
+                sizes=" (max-width: 650px) 80vw,
+			            (min-width: 651px) 40vw"
+                ng-srcset="{{item.imgSmall}} 400w,
+                           {{item.imgMedium}} 800w,
+                           {{item.imgBig}} 1200w"
+                ng-src="{{item.imgSmall}}"
+                alt="{{item.title}} pic"
+            >
+
+            <div class="portfolio-item-text">
+                <p>{{item.text}}</p>
+                <a href="{{item.link}}" target="_blank">{{item.title}}</a>
+            </div>
+        </li>
+    </ul>
+    <div class="portfolio-buttons">
+        <button ng-repeat="item in content.portfolio.items" class="portfolio-button" ng-class="{'portfolio-button-active': selected === $index}" ng-click="select($index, $event)">
+            {{item.title}}
+        </button>
+    </div>
+    <div class="portfolio-buttons-small-screen">
+        <button class="portfolio-button-small-screen portfolio-button-prev" ng-value="'minus'" ng-click="select($index, $event)">Poprzedni</button>
+        <button class="portfolio-button-small-screen portfolio-button-next" ng-value="'plus'" ng-click="select($index, $event)">Następny</button>
+    </div>
+</section>

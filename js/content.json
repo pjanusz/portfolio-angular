@@ -1,0 +1,225 @@
+{
+	"nav": {
+		"mainNav": {
+			"home": "START",
+			"option1": "O MNIE",
+			"option2": "PROJEKTY",
+			"option3": "KONTAKT"
+		}
+	},
+	"start": {
+		"header1": "PIOTR JANUSZ",
+		"header2": "PORTFOLIO",
+		"image": "img/code.jpg"
+	},
+	"about": {
+		"section1": {
+			"id": "about",
+			"header": "O MNIE",
+			"text": "Moje zainteresowanie tworzeniem stron internetowych sięga 1999 roku, ale dopiero teraz zdecydowałem się związać z tym swoją przyszłość. Naukę rozpocząłem od kilku książek i kursów internetowych oraz pisania prostych stron i aplikacji. Podczas dalszego rozwoju dostałem się na kurs w programie Google Developer Challenge Scholarship, którego dobry wynik pozwolił mi następnie wziąć udział w kursie rozszerzonym. Dzięki wyżej wymienionym źródeł poznałem wiele technologii wymaganych oraz przydatnych w pracy przy tworzeniu stron i aplikacji internetowych. Obecnie nadal poszerzam swoją wiedzę, co sprawia mi wiele przyjemności.",
+			"photo": "img/you.jpg",
+			"list": [{
+					"item": "Google Developer Challenge Scholarship: Front-End Web Dev",
+					"content": "Podstawy tworzenia stron WWW. Kurs opierał się głównie na podstawach HTML, CSS i Javascript. Końcowym projektem było stworzenie responsywnej strony WWW."
+				},
+				{
+					"item": "Front-End Web Developer Nanodegree Program",
+					"content": "Tworzenie responsywnych stron WWW z wykorzystaniem różnych technologii: Git, Grunt/Gulp, Jasmine, frameworki. Najważniejszym projektem w ramach kursu było stworzenie mapy w React."
+				}
+			]
+		},
+		"section2": {
+			"id": "skills",
+			"header": "UMIEJĘTNOŚCI",
+			"groups": [
+				[{
+						"pic": "img/skills/html.svg",
+						"name": "HTML5"
+					},
+					{
+						"pic": "img/skills/css3.png",
+						"name": "CSS 3"
+					},
+					{
+						"pic": "img/skills/js.svg",
+						"name": "JAVASCRIPT"
+					},
+					{
+						"pic": "img/skills/rwd.png",
+						"name": "RWD"
+					},
+					{
+						"pic": "img/skills/jquery.svg",
+						"name": "JQUERY"
+					}
+				],
+				[{
+						"pic": "img/skills/angular.svg",
+						"name": "ANGULARJS"
+					},
+					{
+						"pic": "img/skills/react.svg",
+						"name": "REACT"
+					},
+					{
+						"pic": "img/skills/jasmine.svg",
+						"name": "JASMINE"
+					}
+				],
+				[{
+						"pic": "img/skills/nodejs.svg",
+						"name": "NODEJS"
+					},
+					{
+						"pic": "img/skills/git.svg",
+						"name": "GIT"
+					},
+					{
+						"pic": "img/skills/grunt.svg",
+						"name": "GRUNT"
+					},
+					{
+						"pic": "img/skills/gulp.svg",
+						"name": "GULP"
+					},
+					{
+						"pic": "img/skills/linux-tux.svg",
+						"name": "LINUX"
+					}
+				]
+			]
+		},
+		"section3": {
+			"header": "HISTORIA",
+			"id": "timeline",
+			"timeline": [{
+					"time": "2018",
+					"title": "Discord BOT",
+					"tech": "NodeJS, Javascript",
+					"content": "Bot do komunikatora Discord dodający nowe funkcje i wspomagający istniejące."
+				},
+				{
+					"time": "2018",
+					"title": "Neighborhood Map",
+					"tech": "React, Javascript, Google Maps API, Foursquare API, CSS, HTML",
+					"content": "Mapa w React."
+				},
+				{
+					"time": "2018",
+					"title": "Feed Reader Testing",
+					"tech": "Jasmine, Javascript, CSS, HTML",
+					"content": "Testowanie aplikacji przy użyciu frameworka Jasmine."
+				},
+				{
+					"time": "2018",
+					"title": "Memory Game",
+					"tech": "Javascript, CSS, HTML",
+					"content": "Klasyczna gra pamięciowa polegająca na szukaniu 2 takich samych kart na planszy."
+				},
+				{
+					"time": "2017",
+					"title": "Cube",
+					"tech": "Javascript, CSS, HTML",
+					"content": "Trójwymiarowy (nieresponsywny) sześcian, na którego ścianach umieściłem kilka projektów."
+				},
+				{
+					"time": "2017",
+					"title": "Shoot'em All",
+					"tech": "Javascript, CSS, HTML",
+					"content": "Gra \"arcade\" polegająca na strzelaniu w nadlatujące statki."
+				},
+				{
+					"time": "2017",
+					"title": "Currency Converter",
+					"tech": "Javascript, Fixer.io API, CSS, HTML",
+					"content": "Przelicznik walut opierający się na API Fixer.io."
+				},
+				{
+					"time": "2016",
+					"title": "Portfolio",
+					"tech": "Angular, Javascript, CSS, HTML",
+					"content": "Strona WWW z informacjami na temat umiejętności, kontaktem i projektami... Na której właśnie się znajdujesz."
+				},
+				{
+					"time": "2016",
+					"title": "Dice Roller",
+					"tech": "Javascript, CSS, HTML",
+					"content": "Moja pierwsza aplikacja - generator liczb losowych. Po jakimś czasie zmieniła się w aplikację do \"rzutu koścmi\"."
+				}
+			]
+		}
+	},
+	"portfolio": {
+		"header": "PROJEKTY",
+		"items": [{
+				"title": "Currency Converter",
+				"imgBig": "img/cc_big.png",
+				"imgMedium": "img/cc_medium.png",
+				"imgSmall": "img/cc_small.png",
+				"text": "Przelicznik walut opierający się na API Fixer.io. Liczbę walut do wyboru ograniczyłem do \"najbardziej popularnych\" i aktualnego kursu (API pozwala na pobranie cen walut od roku 1999).",
+				"link": "http://cc.piotrjanusz.pl/"
+			},
+			{
+				"title": "Dice Roller",
+				"imgBig": "img/dr_big.png",
+				"imgMedium": "img/dr_medium.png",
+				"imgSmall": "img/dr_small.png",
+				"text": "Prosta aplikacja do \"rzutu kośćmi\". Pozwala na wybranie ilości i rodzaju kości, które można dowolnie łączyć (maksymalnie 12 i nie można połączyć z rzutem monetą), zablokowanie wyniku (ikonka kłódki) - spowoduje to ominięcie tej kości po kliknięciu ROLL i dodanie zablokowanego wyniku do pozostałych, zapisuje historię rzutów (liczba z zablokowanej kości pojawia się na czerwono i posiada dopisek LOCKED.",
+				"link": "http://dr.piotrjanusz.pl/"
+			},
+			{
+				"title": "Shoot'em All",
+				"imgBig": "img/sa_big.png",
+				"imgMedium": "img/sa_medium.png",
+				"imgSmall": "img/sa_small.png",
+				"text": "Bardzo prosta gra polegająca na zestrzeliwaniu nadlatujących statków. Wszystko co jest wyświetlone w grze zostało narysowanie w CANVAS (statki, tło, napisy) za pomocą Javascriptu.",
+				"link": "http://sa.piotrjanusz.pl/"
+			},
+			{
+				"title": "The Map",
+				"imgBig": "img/map_big.png",
+				"imgMedium": "img/map_medium.png",
+				"imgSmall": "img/map_small.png",
+				"text": "Mapa ze znacznikami napisana przy użyciu frameworka React, API Google Maps oraz Foursquare. Na mapie zaznaczono kilka mniej lub bardziej charakterystycznych miejsc w Krakowie, dzięki filtrom można wyszukać miejsce znajdujące się na liście, następnie można wyświetlić informacje o nim klikając znacznik na mapie lub przycisk z nazwą miejsca na liście (informacje o miejescu pochodzą z serwisu Foursquare). W stylach mapy został zmieniony tylko wygląd nazw miejscowości z domyślnego na \"białe wypełnienie z czarnym obrysem\" oraz znaczniki. ",
+				"link": "http://map.piotrjanusz.pl/"
+			},
+			{
+				"title": "Memory Game",
+				"imgBig": "img/mg_big.png",
+				"imgMedium": "img/mg_medium.png",
+				"imgSmall": "img/mg_small.png",
+				"text": "Klasyczna gra pamięciowa polegająca na szukaniu 2 takich samych kart na planszy. Gra posiada stoper mierzący czas od rozpoczęcia do zakończenia rozgrywki, licznik ruchów (za 1 ruch uważa się odkrycie 2 kart) oraz ocenę gracza w postaci 3 gwiazdek, które są odejmowane wraz z upływem czasu i zwiększającą się liczbą ruchów, ostatnim elementem jest przycisk do resetowania gry, po którego kliknięciu karty zostają ponownie losowo rozmieszczone na planszy a liczniki wyzerowane.",
+				"link": "http://mg.piotrjanusz.pl/"
+			},
+			{
+				"title": "the CUBE",
+				"imgBig": "img/cube_big.png",
+				"imgMedium": "img/cube_medium.png",
+				"imgSmall": "img/cube_small.png",
+				"text": "Trójwymiarowy (nieresponsywny) sześcian, na którego ścianach umieściłem kilka projektów (dokładnie 5 bo 1 ściana jest \"powitalna\".",
+				"link": "http://cube.piotrjanusz.pl/"
+			}, {
+				"title": "Discord BOT",
+				"imgBig": "img/bot_big.png",
+				"imgMedium": "img/bot_medium.png",
+				"imgSmall": "img/bot_small.png",
+				"text": "Bot do komunikatora Discord dodający nowe funkcje i wspomagający istniejące. Pozwala na przyznawanie ról poprzez klikanie na reakcje pod wiadomościami, filtrowanie wiadomości (np tylko linki), usuwanie wielu wiadomości z danego kanału, \"szyfrowanie\" wiadomości (po kliknięciu reakcji pod nią odszyfrowany tekst zostaje wysłany w prywatnej wiadomości) oraz wyświetlanie użytkowników posiadających podaną rolę lub aktywność. Obecnie rozwijany.",
+				"link": ""
+			}
+		]
+	},
+	"contact": {
+		"header": "KONTAKT",
+		"options": [{
+			"header": "TELEFON",
+			"type": "tel:",
+			"value": "691918860",
+			"action": ""
+		}, {
+			"header": "E-MAIL",
+			"type": "mailto:",
+			"value": "mail@piotrjanusz.pl",
+			"action": ""
+		}]
+	}
+}
